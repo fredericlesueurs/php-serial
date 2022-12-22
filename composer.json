@@ -1,0 +1,17 @@
+{
+    "name": "fredericlesueurs/php-serial",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "FredericLesueurs\\PhpSerial\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Frédéric Lesueurs",
+            "email": "frederic.lesueurs@gmail.com"
+        }
+    ],
+    "require": {}
+}

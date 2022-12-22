@@ -167,13 +167,13 @@ class SerialPort
                 if ($i > $count) {
                     $content .= fread($this->stream, ($count - $i));
                 } else {
-                    $content .= fread($this->stream, 128);
+                    $content .= fread($this->stream, 256);
                 }
             } while (($i += 128) === strlen($content));
         } else {
             do {
-                $content .= fread($this->stream, 128);
-            } while (($i += 128) === strlen($content));
+                $content .= fread($this->stream, 256);
+            } while (($i += 256) === strlen($content));
         }
 
         return $content;
